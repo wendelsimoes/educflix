@@ -144,3 +144,75 @@ button {
     width: 200px;
     border-radius: 4px;
 }
+
+.carousel {
+    margin-top: 20px;
+}
+
+/*Responsive*/
+@media screen and (max-width:700px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .main-header {
+        flex-direction: row;
+    }
+
+    .main-header nav {
+        flex-direction: row;
+    }
+
+    .main-header nav a {
+        line-height: 100%;
+        display: flex;
+        align-items: center;
+        margin-left: 5px;
+    }
+
+    .main-header nav a::before {
+        content: "";
+        height: 0;
+        width: 0;
+        margin-right: 0;
+    }
+
+    .main-header h2 {
+        font-size: 1em;
+    }
+
+    .main-header span {
+        flex-direction: column;
+        align-items: center;
+        margin-right: 17px;
+    }
+
+    .main-header span p {
+        font-size: 0;
+    }
+
+    .main {
+        margin-top: 20px;
+    }
+
+    .main .description {
+        margin-bottom: 20px;
+    }
+
+    .main-movie .container {
+        flex-direction: column;
+    }
+
+    .main-movie .container .overview {
+        order: 2;
+        margin-top: 10px;
+    }
+
+    .main-movie img {
+        order: 1;
+    }
+
+    .main-movie .container .overview p {
+        margin-bottom: 10px;
+    }
+}
