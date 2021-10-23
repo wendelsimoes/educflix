@@ -2,8 +2,9 @@
     --blue: #2e68aa;
     --orange: #ec7323;
     --grey: #726f6f;
-    --soft-grey: #dbd3d3;
+    --soft-orange: #f3805d;
     --white: #f7e8e8;
+    --red: #bb1818;
 }
 
 * {
@@ -19,6 +20,7 @@ a {
 body {
     background-color: var(--blue);
     font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
     color: var(--grey);
     padding: 5px;
 }
@@ -62,8 +64,8 @@ body {
 .main-header nav a::before {
     content: "";
     height: 50%;
-    width: 2px;
-    background-color: var(--soft-grey);
+    width: 3px;
+    background-color: var(--soft-orange);
     margin-right: 10px;
 }
 
@@ -75,4 +77,70 @@ body {
 
 .main-header span img {
     width: 35px;
+}
+
+/*Main*/
+button {
+    border: none;
+    background-color: var(--blue);
+    padding: 10px;
+    color: var(--white);
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.main {
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.description {
+    padding: 0 20px 0 20px;
+}
+
+.description h3 {
+    color: var(--white);
+    text-align: justify;
+}
+
+.main-movie {
+    margin: 0 20px 0 20px;
+    background-color: var(--white);
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.main-movie .container {
+    flex-direction: row;
+}
+
+.main-movie .container .overview {
+    flex-direction: column;
+    margin-right: 10px;
+    align-items: flex-start;
+}
+
+.main-movie .container .overview p {
+    text-align: justify;
+}
+
+.main-movie .container .overview .btns {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: auto;
+}
+
+.main-movie .container .overview .btns button {
+    margin-right: 10px;    
+}
+
+.watch-btn {
+    background-color: var(--red);
+}
+
+.main-movie img {
+    width: 200px;
+    border-radius: 4px;
 }
